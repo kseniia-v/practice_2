@@ -23,19 +23,18 @@ namespace practice_2
         {
             int res = 1;
             for (int i = 1; i <= x; i++) res *= i;
-            return res;
+            return x > 0 ? res : 0;
         }
         static int CalcFactorial2(int x)
         {
-            int res = 1;
-            if (x != 0) res = x * CalcFactorial2(x - 1);
-            return res;
+            int res = 1; //int t = x;
+            if (x > 1) res = x * CalcFactorial2(x - 1); 
+            return x > 0 ? res : 0;
         }
         static int CalcFactorial3(int x)
         {
-            List<int> numbers = new List<int>();
-            for (int i = 1; i <= x; i++) { numbers.Add(i); }
-            return numbers.Aggregate((x, y) => x * y);
+            try { return Enumerable.Range(1, x).Aggregate((a, b) => a * b); }
+            catch (Exception e) { Console.WriteLine(e.Message); return 0; }
         }
     }
 }

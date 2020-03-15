@@ -10,16 +10,27 @@ namespace practice_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter x you want to calculate as factorial and fibonacci member");
+            /* int x;
+             do
+             {
+                 Console.WriteLine("enter x as positive value to calculate it as factorial and fibonacci member");
+                 x = Convert.ToInt32(Console.ReadLine());
+             }
+             while (x < 0);
+             */
+
+            Console.WriteLine("enter x as positive value to calculate it as factorial and fibonacci member");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
 
             //1
             Console.WriteLine("Task #1");
             Fibonacci fibonacco = new Fibonacci(x);
-            Console.WriteLine($"f({x}) = {fibonacco.Result}");
+            Console.WriteLine($"f({x}) = {fibonacco.Result1}");
+            Console.WriteLine($"f({x}) = {fibonacco.Result2}");
+            Console.WriteLine($"f({x}) = {fibonacco.Result3}");
             Console.WriteLine();
-            
+                        
             //2
             Console.WriteLine("Task #2");
             Factorial factorial = new Factorial(x);
@@ -27,7 +38,7 @@ namespace practice_2
             Console.WriteLine($"{x}! = {factorial.Result2}");
             Console.WriteLine($"{x}! = {factorial.Result3}");
             Console.WriteLine();
-
+            /*
             //3
             Console.WriteLine("Task #3");
             Book book1 = new Book { Title = "1984", Author = "George Orwell", Opinion = Opinion.Amazing };
@@ -54,6 +65,8 @@ namespace practice_2
             Console.WriteLine($"uneven numbers");
             //grarr.PrintAGroup(grarr.Unevens);
             grarr.PrintUnevens();
+            */
+            
         }
     }
 }
