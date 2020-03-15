@@ -38,7 +38,7 @@ namespace practice_2
             Console.WriteLine($"{x}! = {factorial.Result2}");
             Console.WriteLine($"{x}! = {factorial.Result3}");
             Console.WriteLine();
-            /*
+            
             //3
             Console.WriteLine("Task #3");
             Book book1 = new Book { Title = "1984", Author = "George Orwell", Opinion = Opinion.Amazing };
@@ -65,7 +65,6 @@ namespace practice_2
             Console.WriteLine($"uneven numbers");
             //grarr.PrintAGroup(grarr.Unevens);
             grarr.PrintUnevens();
-            */
             
         }
     }

@@ -27,7 +27,7 @@ namespace practice_2
         }
         static int CalcFactorial2(int x)
         {
-            int res = 1; //int t = x;
+            int res = 1; 
             if (x > 1) res = x * CalcFactorial2(x - 1); 
             return x > 0 ? res : 0;
         }
